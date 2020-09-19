@@ -2,13 +2,6 @@
 ;09/09/2020-TDM2
 
 ;Definiçao de variaveis 
-LED       bit   p1.7
-LED1      bit   p1.5
-SOn   bit   p1.0
-;******************************************************
-              org 00h
-ini:
-           setb p1.7
            setb p1.5
            jnb Son,$
            jb  Son,$ ;aguardar o acionamento para ligar 
